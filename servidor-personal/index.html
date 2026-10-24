@@ -1,58 +1,60 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Servidor Personal — Jellyfin</title>
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65; background: #f5f6f8; color: #1c2128; }
-  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 64px; }
-  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .4rem; }
-  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
-  .lead { font-size: 1.15rem; color: #4a5568; margin-top: 0; }
-  ul { padding-left: 1.2rem; }
-  li { margin: .35rem 0; }
-  a { color: #0b5cad; }
-  .card { background: #fff; border: 1px solid #e2e6ea; border-radius: 12px; padding: 28px 30px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-  .muted { color: #6b7280; font-size: .9rem; margin-top: 2rem; }
-  footer { margin-top: 2.5rem; font-size: .9rem; color: #6b7280; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #0f1216; color: #e6e9ee; }
-    .card { background: #161b22; border-color: #2a313a; }
-    .lead, .muted, footer { color: #9aa4b2; }
-    a { color: #6cb6ff; }
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servidor Personal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font: 16px/1.7 system-ui, sans-serif;
+      color: #20252b;
+      background: #f4f6f8;
+    }
+    main {
+      max-width: 720px;
+      margin: auto;
+      padding: 32px;
+      background: white;
+      border: 1px solid #e1e5e9;
+      border-radius: 12px;
+    }
+    h1 { line-height: 1.2; }
+    a { color: #0759a5; }
+    .muted { color: #68717c; font-size: .9rem; }
+  </style>
 </head>
 <body>
-<main>
-  <div class="card">
+  <main>
     <h1>Servidor Personal</h1>
-    <p class="lead">Servidor multimedia privado basado en Jellyfin.</p>
 
-    <p>Esta aplicación es un proyecto personal de Carlos Asparrin Martin. Se utiliza para acceder únicamente a los archivos de Google Drive del propio titular y reproducirlos en su servidor Jellyfin privado.</p>
+    <p>
+      Proyecto personal para utilizar servicios de Google desde un servidor
+      privado alojado en Oracle Cloud.
+    </p>
 
-    <h2>Qué hace la aplicación</h2>
-    <ul>
-      <li>Solicita el permiso <code>drive.readonly</code> para listar y leer los archivos del Drive del titular.</li>
-      <li>Guarda el token de autorización en el servidor privado para mantener el acceso.</li>
-      <li>Reproduce el contenido en la red privada del titular mediante Jellyfin.</li>
-    </ul>
+    <p>
+      El titular configura las integraciones y autoriza mediante OAuth los
+      permisos necesarios para cada una. Los datos se utilizan únicamente
+      para ejecutar esas integraciones en el servidor.
+    </p>
 
-    <h2>Qué no hace</h2>
-    <ul>
-      <li>No es un servicio público ni permite el registro de terceros.</li>
-      <li>No vende, comparte ni utiliza los datos para publicidad.</li>
-      <li>No modifica ni elimina archivos de Google Drive.</li>
-    </ul>
+    <p>
+      Este proyecto es de uso personal. No ofrece registro público ni utiliza
+      los datos con fines publicitarios o comerciales.
+    </p>
 
-    <p><a href="privacidad.html">Política de privacidad</a></p>
-    <p>Contacto: <a href="mailto:asparrincarlos715@gmail.com">asparrincarlos715@gmail.com</a></p>
-    <p class="muted">Última actualización: 24 de octubre de 2026.</p>
-  </div>
-  <footer>Servidor Personal · asparrin.me</footer>
-</main>
+    <p>
+      <a href="privacidad.html">Política de privacidad</a>
+    </p>
+
+    <p class="muted">
+      Contacto:
+      <a href="mailto:asparrincarlos715@gmail.com">
+        asparrincarlos715@gmail.com
+      </a>
+    </p>
+  </main>
 </body>
 </html>
