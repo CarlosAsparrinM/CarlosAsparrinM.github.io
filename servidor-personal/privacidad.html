@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — Servidor Personal</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.7; background: #f5f6f8; color: #1c2128; }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 20px 72px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .3rem; }
+  h2 { font-size: 1.12rem; margin: 2rem 0 .5rem; }
+  p, li { margin: .55rem 0; }
+  ul { padding-left: 1.25rem; }
+  a { color: #0b5cad; }
+  .card { background: #fff; border: 1px solid #e2e6ea; border-radius: 12px; padding: 30px 34px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+  .muted { color: #6b7280; font-size: .9rem; }
+  code { background: #eef1f4; padding: .1rem .3rem; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1216; color: #e6e9ee; }
+    .card { background: #161b22; border-color: #2a313a; }
+    .muted { color: #9aa4b2; }
+    a { color: #6cb6ff; }
+    code { background: #222a33; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>Política de Privacidad</h1>
+    <p class="lead">Servidor Personal · Última actualización: 24 de octubre de 2026</p>
+
+    <h2>1. Responsable</h2>
+    <p>Carlos Asparrin Martin, proyecto personal sin fines comerciales. Contacto: <a href="mailto:asparrincarlos715@gmail.com">asparrincarlos715@gmail.com</a>.</p>
+
+    <h2>2. Datos de Google a los que se accede</h2>
+    <ul>
+      <li>La dirección de correo de la cuenta de Google que autoriza la aplicación.</li>
+      <li>Metadatos de los archivos de Google Drive (nombre, tamaño y fechas).</li>
+      <li>El contenido de los archivos del Drive que el titular reproduce, con permiso de solo lectura (<code>drive.readonly</code>).</li>
+      <li>El token OAuth necesario para mantener la autorización.</li>
+    </ul>
+
+    <h2>3. Finalidad</h2>
+    <p>Los datos se usan exclusivamente para que el titular del Drive reproduzca su propio contenido en su servidor Jellyfin privado. No se usan para publicidad, elaboración de perfiles, venta ni cesión a terceros.</p>
+
+    <h2>4. Almacenamiento</h2>
+    <p>El token se guarda en la configuración privada del servidor. Los archivos se leen de Google Drive y se almacenan temporalmente en una caché local para permitir la reproducción; esa caché se elimina automáticamente. No se crean copias permanentes ni se comparten archivos.</p>
+
+    <h2>5. Terceros</h2>
+    <p>No se venden ni ceden datos. Solo intervienen los proveedores de infraestructura necesarios para el funcionamiento: Google (Google Drive), Oracle Cloud (servidor), Cloudflare (túnel HTTPS) y Tailscale (acceso privado). No tienen acceso a los datos para fines propios.</p>
+
+    <h2>6. Conservación</h2>
+    <p>El token se conserva hasta que el titular revoque el acceso. La caché temporal se elimina según la configuración del servidor. Los registros técnicos se conservan como máximo 30 días.</p>
+
+    <h2>7. Seguridad</h2>
+    <p>El acceso al servidor está restringido al titular, se usa HTTPS y la autorización se realiza mediante OAuth. No existe registro público ni cuentas de terceros.</p>
+
+    <h2>8. Derechos y revocación</h2>
+    <p>Puedes revocar el acceso de la aplicación en <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Para solicitar la eliminación de datos o resolver cualquier duda, escribe a <a href="mailto:asparrincarlos715@gmail.com">asparrincarlos715@gmail.com</a>.</p>
+
+    <h2>9. Uso limitado</h2>
+    <p>El uso de la información recibida de las API de Google se ajustará a la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+    <p class="muted">The use of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+    <h2>10. Cambios</h2>
+    <p>Cualquier cambio en esta política se publicará en esta misma página junto con la fecha de actualización.</p>
+
+    <p class="muted"><a href="index.html">Volver a Servidor Personal</a></p>
+  </div>
+</main>
+</body>
+</html>
